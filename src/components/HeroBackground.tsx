@@ -36,17 +36,19 @@ export function HeroBackground() {
         />
       )}
 
-      {/* Darken the middle so the wordmark always has something to sit on. */}
+      {/* A light touch only. Measured against the shipped art, the wordmark zone is already
+          4.4:1 at its brightest pixel; a heavy scrim would buy contrast nobody needs and
+          flatten the sunset. This lifts the worst case to ~7:1 and stays invisible. */}
       <div
         className="absolute inset-0"
         style={{
           background:
-            "radial-gradient(80% 60% at 50% 45%, rgba(8,7,10,0.72) 0%, rgba(8,7,10,0.35) 55%, rgba(8,7,10,0.15) 100%)",
+            "radial-gradient(80% 60% at 50% 45%, rgba(8,7,10,0.30) 0%, rgba(8,7,10,0.12) 55%, rgba(8,7,10,0) 100%)",
         }}
       />
       {/* Fade the bottom edge into the page so the section joins the one below it. */}
       <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-background" />
-      <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-background/80 to-transparent" />
+      <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-background/60 to-transparent" />
     </div>
   );
 }

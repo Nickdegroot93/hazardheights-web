@@ -24,10 +24,10 @@ export const metadata: Metadata = {
     description: "A physics tower-stacking game for iOS and Android.",
     url: SITE.url,
     siteName: SITE.name,
-    images: ["/og.png"],
+    images: ["/og.jpg"],
     type: "website",
   },
-  twitter: { card: "summary_large_image", images: ["/og.png"] },
+  twitter: { card: "summary_large_image", images: ["/og.jpg"] },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
