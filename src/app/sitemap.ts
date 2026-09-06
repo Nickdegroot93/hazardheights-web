@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { SITE } from "@/site.config";
 import { POSTS } from "@/content/posts";
 
-const ROUTES = ["", "/blog", "/privacy", "/terms", "/support", "/delete-account"];
+const ROUTES = ["", "/blog", "/press", "/privacy", "/terms", "/support", "/delete-account"];
 
 // Required by `output: "export"` — these metadata routes must be emitted at build time.
 export const dynamic = "force-static";

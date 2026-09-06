@@ -3,6 +3,7 @@ import { SITE } from "@/site.config";
 
 const LINKS = [
   { href: "/blog/", label: "Blog" },
+  { href: "/press/", label: "Press kit" },
   { href: "/privacy/", label: "Privacy Policy" },
   { href: "/terms/", label: "Terms of Service" },
   { href: "/support/", label: "Support" },

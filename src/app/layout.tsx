@@ -4,6 +4,7 @@ import "./globals.css";
 import { SITE } from "@/site.config";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { JsonLd } from "@/components/JsonLd";
 
 const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
 const archivoBlack = Archivo_Black({
@@ -28,6 +29,27 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", images: ["/og.jpg"] },
+  alternates: {
+    canonical: "/",
+    types: { "application/rss+xml": `${SITE.url}/feed.xml` },
+  },
+  keywords: [
+    "Hazard Heights",
+    "physics block stacking game",
+    "tower stacking game",
+    "offline mobile game",
+    "tetromino physics",
+    "Android puzzle game",
+    "iOS puzzle game",
+  ],
+};
+
+const WEBSITE = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: SITE.name,
+  url: SITE.url,
+  publisher: { "@type": "Person", name: SITE.developer },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -37,6 +59,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${inter.variable} ${archivoBlack.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
+        <JsonLd data={WEBSITE} />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

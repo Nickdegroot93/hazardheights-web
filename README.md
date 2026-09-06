@@ -23,6 +23,8 @@ links, subprocessor list, the legal draft banner. Change it there, not in the pa
 | Route | Why it exists |
 |---|---|
 | `/` | Homepage: positioning copy, screenshots, features, offline section, FAQ (FAQPage + VideoGame structured data). Never names another game — comparisons live in the blog. |
+| `/press/` | Press kit: one-paragraph description, fact table, downloadable art in `public/press/`. |
+| `/feed.xml`, `/llms.txt`, `/manifest.webmanifest` | RSS for the blog, an AI-crawler summary of the site, web app manifest. |
 | `/blog/`, `/blog/<slug>/` | Hardcoded posts in `src/content/posts.ts` (Article + FAQPage structured data per post). Written to be the indexed answer for "offline games for a flight", "games like Tricky Towers on mobile", etc. House rules at the top of that file: offline = the one-time purchase, never state chapter/block totals, other games named descriptively with a trademark note. |
 | `/privacy/` | **Required** — both stores ask for a privacy policy URL |
 | `/terms/` | Terms of service |
@@ -40,6 +42,12 @@ links, subprocessor list, the legal draft banner. Change it there, not in the pa
 5. **Add the images** — see `PROMPTS.md`. `shot-1..4.png` must be real gameplay captures.
 6. **Update the game's constants** to point here — `PrivacyPolicyUrl`, `TermsUrl` and
    `SupportEmail` in `MainMenuRuntime.Settings.cs:529` still say `madtowers.app`.
+
+## After every deploy
+
+`npm run indexnow` pings Bing/IndexNow with every sitemap URL (key in `.indexnow`, key file in
+`public/`). Bing feeds ChatGPT search and Copilot. Google has no ping any more; Search Console +
+the sitemap cover it. Register the domain once in Google Search Console and Bing Webmaster Tools.
 
 ## Deploy (Vercel)
 

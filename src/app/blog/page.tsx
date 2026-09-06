@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Blog",
   description:
     "Notes from the Hazard Heights team: offline mobile games, physics stacking, and how the game is built.",
+  alternates: { canonical: "/blog/" },
 };
 
 export default function Blog() {

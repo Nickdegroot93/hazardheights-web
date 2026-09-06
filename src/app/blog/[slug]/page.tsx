@@ -54,6 +54,15 @@ export default async function PostPage({ params }: { params: Promise<Params> }) 
     image: `${SITE.url}/og.jpg`,
     about: { "@type": "VideoGame", name: SITE.name, url: SITE.url },
   };
+  const breadcrumbs = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: SITE.name, item: `${SITE.url}/` },
+      { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE.url}/blog/` },
+      { "@type": "ListItem", position: 3, name: post.title, item: url },
+    ],
+  };
   const faq = post.faq && {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -67,6 +76,7 @@ export default async function PostPage({ params }: { params: Promise<Params> }) 
   return (
     <article className="mx-auto max-w-3xl px-5 py-14">
       <JsonLd data={article} />
+      <JsonLd data={breadcrumbs} />
       {faq && <JsonLd data={faq} />}
 
       <p className="text-xs uppercase tracking-widest text-accent">{post.tags.join(" · ")}</p>

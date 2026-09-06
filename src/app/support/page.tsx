@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE } from "@/site.config";
 
-export const metadata: Metadata = { title: "Support" };
+export const metadata: Metadata = { title: "Support",
+  alternates: { canonical: "/support/" },
+};
 
 const FAQ = [
   {

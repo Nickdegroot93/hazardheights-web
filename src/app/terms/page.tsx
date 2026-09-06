@@ -3,7 +3,9 @@ import Link from "next/link";
 import { SITE } from "@/site.config";
 import { LegalShell } from "@/components/LegalShell";
 
-export const metadata: Metadata = { title: "Terms of Service" };
+export const metadata: Metadata = { title: "Terms of Service",
+  alternates: { canonical: "/terms/" },
+};
 
 export default function Terms() {
   return (

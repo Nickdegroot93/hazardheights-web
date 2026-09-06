@@ -27,8 +27,8 @@ any 9:16) and drop them in.
 
 All three were derived from `~/Documents/MadTowers/hero-image.png` (2688×1520), so they
 share one piece of art and one light source. Regenerate with the script in the commit
-message if the source art changes. **Only `icon.png` and the four screenshots are still
-outstanding.**
+message if the source art changes. **Only the four screenshots are still outstanding** (the icon is done: the golem store icon
+is now `src/app/icon.png` / `apple-icon.png` / `favicon.ico`, and `og.jpg` is the golem key art).
 
 - `hero-bg.jpg` — 2560×1448, full frame, tower left, empty centre
 - `hero-bg-mobile.jpg` — 1170×2000, **sky only, tower deliberately excluded**. Every crop

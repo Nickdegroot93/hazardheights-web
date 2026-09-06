@@ -3,7 +3,9 @@ import Link from "next/link";
 import { SITE } from "@/site.config";
 import { LegalShell } from "@/components/LegalShell";
 
-export const metadata: Metadata = { title: "Privacy Policy" };
+export const metadata: Metadata = { title: "Privacy Policy",
+  alternates: { canonical: "/privacy/" },
+};
 
 const STORED = [
   {

@@ -240,6 +240,84 @@ export const POSTS: Post[] = [
       },
     ],
   },
+  {
+    slug: "is-there-a-tricky-towers-app",
+    title: "Is there a Tricky Towers app for Android or iPhone?",
+    description:
+      "No official one. What Tricky Towers is available on, why there is no phone version, and the closest thing to it on mobile.",
+    date: "2026-09-06",
+    tags: ["tricky towers", "android", "iphone"],
+    mentionsOtherGames: true,
+    sections: [
+      {
+        paragraphs: [
+          "No. At the time of writing there is no official Tricky Towers app for Android or iPhone. Tricky Towers, by WeirdBeard, is sold on Steam, PlayStation, Xbox and Nintendo Switch. Anything in an app store using the name is not the game.",
+          "The closest experience on a phone is a physics block-stacking game built for portrait play. Hazard Heights is one: tetromino bricks that fall as rigid bodies, a tower you keep standing, hazards that try to knock it over, and rounds a few minutes long. It is free to start, with a one-time purchase that also unlocks offline play. WeirdBeard's own older mobile game, 99 Bricks Wizard Academy, is the other option if you want their take.",
+        ],
+      },
+      {
+        heading: "Why phone stacking games feel different",
+        paragraphs: [
+          "Console Tricky Towers is built around a landscape screen and a race against another player. A phone game has one thumb and a tall screen, so the design shifts: single-player, taller towers, steering by swipe, and shorter rounds. If a mobile game claims to be Tricky Towers with the same multiplayer race, be suspicious.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Can I play Tricky Towers on my phone through streaming?",
+        a: "Only if you own it on a platform with a streaming app, such as Xbox Cloud Gaming or PlayStation Remote Play, and have a stable connection. That is not an offline option.",
+      },
+      {
+        q: "Is Hazard Heights a copy of Tricky Towers?",
+        a: "No. It is an independent physics stacking game made for phones by Nick de Groot, with its own hazards, medal tiers and abilities. It is not affiliated with WeirdBeard.",
+      },
+    ],
+  },
+  {
+    slug: "offline-puzzle-games-no-wifi",
+    title: "Offline puzzle games that do not need wifi",
+    description:
+      "Puzzle games for iPhone and Android that start and play with the network off, and how to check a game really works offline before you need it.",
+    date: "2026-09-06",
+    tags: ["offline", "puzzle", "list"],
+    mentionsOtherGames: true,
+    sections: [
+      {
+        paragraphs: [
+          "A puzzle game that does not need wifi is one you can open in airplane mode and play immediately, not one with an offline mode you have to find first. These do, once installed. Where a game has a condition, it is written next to it.",
+        ],
+      },
+      {
+        bullets: [
+          "Hazard Heights. Physics block stacking in portrait, a few minutes a round. " + OFFLINE_NOTE,
+          "Threes. Slide numbered tiles, merge them, keep going. Fully offline.",
+          "Mini Metro. Draw a subway map that keeps up with the city. Fully offline.",
+          "Monument Valley and Monument Valley 2. Short, offline, finishable in an afternoon.",
+          "Baba Is You. Rule-rewriting puzzles, hundreds of them. Offline.",
+          "Really Bad Chess. Chess with random pieces. Offline, and better than it sounds.",
+          "Good Sudoku. Offline, with a proper hint system.",
+        ],
+      },
+      {
+        heading: "How to check before you need it",
+        bullets: [
+          "Turn on airplane mode at home and open the game. If it shows a login screen or a spinner, it needs the network.",
+          "Play one full round and close the app, then reopen it. If your progress is there, saves are local.",
+          "If a game is free with ads, check that a failed ad does not block play. Paid games and games with optional ads avoid this.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Do offline games save my progress?",
+        a: "Most save locally and sync later if they have accounts. Test it once at home: play a round in airplane mode, close the app, reopen it.",
+      },
+      {
+        q: "Does Hazard Heights need wifi?",
+        a: "Free play needs a connection to start a run. Hazard Heights Unlimited, the one-time purchase, unlocks offline play; those runs are unranked and sync when you reconnect.",
+      },
+    ],
+  },
 ];
 
 export const postBySlug = (slug: string) => POSTS.find((p) => p.slug === slug);

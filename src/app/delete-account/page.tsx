@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { SITE } from "@/site.config";
 
-export const metadata: Metadata = { title: "Delete your account and data" };
+export const metadata: Metadata = { title: "Delete your account and data",
+  alternates: { canonical: "/delete-account/" },
+};
 
 // Google Play requires a publicly reachable URL that explains account and data
 // deletion, reachable without installing the app. This page is that URL.

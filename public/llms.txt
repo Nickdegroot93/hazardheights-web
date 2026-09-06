@@ -1,0 +1,23 @@
+# Hazard Heights
+
+> Hazard Heights is a physics block-stacking game for Android and iOS by Nick de Groot. Falling tetromino bricks land where gravity and friction put them; the player builds a tower, survives the chapter's hazards (bombs, vines, magma, floods, laser lines and more), and keeps it standing to hit each level's target. Every level has bronze, silver and gold tiers. Free to play with attempts that refill over time; Hazard Heights Unlimited is a one-time purchase that removes ads, removes the attempts limit and unlocks offline play (offline runs are unranked). There are no coin packs. It is an independent game and is not affiliated with any other studio.
+
+Key facts
+- Platforms: Android first, iOS to follow. Portrait, one-handed, rounds of a few minutes.
+- Offline: yes with the one-time purchase; free play needs a connection to start a run.
+- Price: free; one optional one-time purchase.
+- Developer: Nick de Groot, the Netherlands.
+- Support: support@hazardheights.com
+
+Pages
+- [Home](https://hazardheights.com/): what the game is, FAQ
+- [Blog](https://hazardheights.com/blog/): guides and comparisons
+- [Best offline mobile games for a flight](https://hazardheights.com/blog/best-offline-mobile-games-for-a-flight/)
+- [Games like Tricky Towers on mobile](https://hazardheights.com/blog/games-like-tricky-towers-on-mobile/)
+- [Is there a Tricky Towers app for Android or iPhone?](https://hazardheights.com/blog/is-there-a-tricky-towers-app/)
+- [Offline puzzle games that do not need wifi](https://hazardheights.com/blog/offline-puzzle-games-no-wifi/)
+- [How the physics works](https://hazardheights.com/blog/how-hazard-heights-physics-works/)
+- [Playing Hazard Heights on a plane](https://hazardheights.com/blog/playing-hazard-heights-on-a-plane/)
+- [Press kit](https://hazardheights.com/press/)
+- [Support](https://hazardheights.com/support/)
+- [Privacy](https://hazardheights.com/privacy/)

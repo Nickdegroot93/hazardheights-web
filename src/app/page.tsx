@@ -5,29 +5,11 @@ import { HeroBackground } from "@/components/HeroBackground";
 import { Shot } from "@/components/Shot";
 import { JsonLd } from "@/components/JsonLd";
 
-// Homepage copy rules: say what the game IS in plain sentences (that is what search and AI
-// answer engines quote), lead with "offline" honestly (the one-time purchase unlocks it), and
-// never name another game here — comparisons live in /blog, where they read as editorial.
-// Never state chapter or block totals (the game keeps its size a secret).
-
-const FEATURES = [
-  {
-    title: "Real physics",
-    body: "Every brick is a rigid body with mass and friction. Nothing snaps to a grid. A tower that leans will eventually go, and you will know why.",
-  },
-  {
-    title: "Hazards",
-    body: "Bombs on a fuse. Vines that weld bricks together. Magma that melts through gaps. A rising flood. A laser line you may not cross. Every chapter changes the rules.",
-  },
-  {
-    title: "Bronze, silver, gold",
-    body: "Every level has a target and three tiers above it. Clear it once, then come back and build it better.",
-  },
-  {
-    title: "One hand, a few minutes",
-    body: "Portrait, swipe and tap. A round fits in a queue, a commute, or a tray table.",
-  },
-];
+// Homepage copy rules: MINIMAL (Nick 2026-09-06 cut a features section as overkill): hero,
+// screenshots, the offline section, the FAQ. Say what the game IS in plain sentences (that is
+// what search and AI answer engines quote), lead with "offline" honestly (the one-time purchase
+// unlocks it), and never name another game here — comparisons live in /blog, where they read as
+// editorial. Never state chapter or block totals (the game keeps its size a secret).
 
 const FAQ = [
   {
@@ -131,25 +113,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-5xl px-5 pb-16">
-        <h2 className="display text-2xl sm:text-3xl">A tower that obeys gravity</h2>
-        <p className="mt-4 max-w-2xl text-muted">
-          Tetromino bricks fall, you steer them, and they land where physics puts them. There
-          is no grid to save you and no lines to clear. Place well and the tower climbs; place
-          badly and you watch it lean, then go. Then you try again, because a round is only a
-          few minutes long.
-        </p>
-        <div className="mt-10 grid gap-4 sm:grid-cols-2">
-          {FEATURES.map((f) => (
-            <div key={f.title} className="neon-edge rounded-xl bg-surface p-5">
-              <h3 className="display text-base">{f.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted">{f.body}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-5xl px-5 pb-16">
+      <section className="mx-auto max-w-3xl px-5 pb-16 pt-6">
         <h2 className="display text-2xl sm:text-3xl">Play offline, anywhere</h2>
         <p className="mt-4 max-w-2xl text-muted">
           {SITE.name} Unlimited is a one-time purchase: no ads, unlimited attempts, and the
