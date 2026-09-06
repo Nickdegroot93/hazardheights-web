@@ -22,7 +22,8 @@ links, subprocessor list, the legal draft banner. Change it there, not in the pa
 
 | Route | Why it exists |
 |---|---|
-| `/` | Homepage, store buttons, screenshots |
+| `/` | Homepage: positioning copy, screenshots, features, offline section, FAQ (FAQPage + VideoGame structured data). Never names another game — comparisons live in the blog. |
+| `/blog/`, `/blog/<slug>/` | Hardcoded posts in `src/content/posts.ts` (Article + FAQPage structured data per post). Written to be the indexed answer for "offline games for a flight", "games like Tricky Towers on mobile", etc. House rules at the top of that file: offline = the one-time purchase, never state chapter/block totals, other games named descriptively with a trademark note. |
 | `/privacy/` | **Required** — both stores ask for a privacy policy URL |
 | `/terms/` | Terms of service |
 | `/support/` | **Required** — Apple asks for a support URL |

@@ -18,10 +18,10 @@ export const metadata: Metadata = {
     default: SITE.name,
     template: `%s — ${SITE.name}`,
   },
-  description: `${SITE.name} is a physics tower-stacking game for iOS and Android. Download it free.`,
+  description: `${SITE.name} is a physics block-stacking game for iOS and Android. Stack falling bricks into a tower, survive the hazards, keep it standing. Free to play; the one-time purchase unlocks offline play.`,
   openGraph: {
     title: SITE.name,
-    description: "A physics tower-stacking game for iOS and Android.",
+    description: "Physics block-stacking for your phone. Build the tower, survive the hazards, keep it standing.",
     url: SITE.url,
     siteName: SITE.name,
     images: ["/og.jpg"],

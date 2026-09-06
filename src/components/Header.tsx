@@ -10,6 +10,9 @@ export function Header() {
           {SITE.name}
         </Link>
         <nav className="flex items-center gap-5 text-sm text-muted">
+          <Link href="/blog/" className="hover:text-foreground transition-colors">
+            Blog
+          </Link>
           <Link href="/support/" className="hover:text-foreground transition-colors">
             Support
           </Link>

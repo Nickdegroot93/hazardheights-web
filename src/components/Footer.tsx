@@ -2,6 +2,7 @@ import Link from "next/link";
 import { SITE } from "@/site.config";
 
 const LINKS = [
+  { href: "/blog/", label: "Blog" },
   { href: "/privacy/", label: "Privacy Policy" },
   { href: "/terms/", label: "Terms of Service" },
   { href: "/support/", label: "Support" },
