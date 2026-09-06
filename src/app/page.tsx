@@ -114,12 +114,10 @@ export default function Home() {
       </section>
 
       <section className="mx-auto max-w-3xl px-5 pb-16 pt-6">
-        <h2 className="display text-2xl sm:text-3xl">Play offline, anywhere</h2>
+        <h2 className="display text-2xl sm:text-3xl">Free to play. Offline with Unlimited.</h2>
         <p className="mt-4 max-w-2xl text-muted">
-          {SITE.name} Unlimited is a one-time purchase: no ads, unlimited attempts, and the
-          whole game playable with no connection at all, on a plane, on the underground, in a
-          cabin with no signal. Offline runs do not rank on the leaderboards; everything else
-          is yours and syncs when you are back.{" "}
+          The whole game is free. {SITE.name} Unlimited is a one-time purchase that removes ads
+          and the attempts limit and unlocks offline play.{" "}
           <Link href="/blog/playing-hazard-heights-on-a-plane/" className="text-foreground underline underline-offset-4">
             How offline play works.
           </Link>
