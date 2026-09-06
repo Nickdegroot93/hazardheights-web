@@ -83,11 +83,6 @@ export default function Press() {
         ))}
       </ul>
 
-      <h2 className="display mt-12 text-xl">The mascot</h2>
-      <p className="mt-4 text-sm leading-relaxed text-muted">
-        The stone golem on the icon and key art is the game&apos;s mascot. He does not appear as a
-        character in play yet; he is the world&apos;s builder, and the towers you stack are his.
-      </p>
     </div>
   );
 }
